@@ -23,7 +23,7 @@ const Index = () => {
 
   const handleCheckout = () => {
     // Redirect to Mercado Pago (Peru) with the total amount
-    window.location.href = `https://www.mercadopago.com.pe/checkout?amount=${total}`;
+    window.location.href = `https://www.mercadopago.com.pe/checkout/v1/redirect?pref_id=${total}`;
   };
 
   return (
