@@ -16,9 +16,9 @@ const Index = () => {
     setIsOpen(false);
   };
 
-  const handleQuantityChange = (value) => {
-    setQuantity(value);
-    setTotal(productPrice * value);
+  const handleQuantityChange = (valueAsString, valueAsNumber) => {
+    setQuantity(valueAsNumber);
+    setTotal(productPrice * valueAsNumber);
   };
 
   const handleCheckout = () => {
