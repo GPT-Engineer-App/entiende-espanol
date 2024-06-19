@@ -54,13 +54,15 @@ const Index = () => {
               <Text>Precio por unidad: S/. {productPrice}</Text>
               <Box>
                 <Text>Cantidad:</Text>
-                <NumberInput value={quantity} min={1} onChange={handleQuantityChange}>
-                  <NumberInputField />
-                  <NumberInputStepper>
-                    <NumberIncrementStepper />
-                    <NumberDecrementStepper />
-                  </NumberInputStepper>
-                </NumberInput>
+                <Box display="flex" alignItems="center">
+                  <NumberInput value={quantity} min={1} onChange={handleQuantityChange}>
+                    <NumberInputField />
+                    <NumberInputStepper>
+                      <NumberIncrementStepper />
+                      <NumberDecrementStepper />
+                    </NumberInputStepper>
+                  </NumberInput>
+                </Box>
               </Box>
               <Text>Total: S/. {total}</Text>
               <Box>
